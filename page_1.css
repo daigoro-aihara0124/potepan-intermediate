@@ -1,0 +1,1371 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* ヘッダー */
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+ header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+@media screen and (max-width: 1080px) {
+ header {
+    position: fixed;
+    background-color: #fff;
+    z-index: 10;
+    width: 100%;
+}
+}
+
+
+
+
+.contents-tidy {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+.container {
+ max-width: none;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+}
+
+
+ a {
+    color: #222;
+    text-decoration: none;
+}
+
+
+.header-logo > .header-logo-pc {
+    width: auto;
+    height: 20px;
+}
+
+.header-logo > .header-logo-sp {
+    display: none;
+}
+
+.header-nav-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1080px){
+ nav .header-nav-hamburger {
+ cursor: pointer;
+ display: block;
+ position: relative;
+ width: 30px;
+ height: 21px;
+ z-index: 100;
+ 
+}
+}
+
+@media screen and (max-width: 1080px) {
+ nav .header-nav-hamburger-line {
+ position: absolute;
+ top: 50%;
+ display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #222;
+    transform: translate(0, -50%);
+    border-radius: 10px;
+    transition: top 0.2s, transform 0.2s, opacity 0.3s;
+}
+}
+
+@media screen and (max-width: 1080px) {
+ nav .header-nav-hamburger-line:first-child {
+    top: 0;
+}
+}
+
+@media screen and (max-width: 1080px) {
+ nav .header-nav-hamburger-line:last-child {
+    top: 100%;
+}
+}
+
+@media screen and (max-width: 1080px) {
+ nav .header-nav-list {
+  overflow-y: scroll;
+  position: fixed;
+  top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+  transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+}
+
+
+.header-nav-list.contents-tidy {
+    align-items: center;
+}
+
+.header-nav .header-nav-item {
+    display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+nav .header-nav-item.current {
+    color: #f79314;
+}
+
+
+ nav .header-nav-item > span {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+}
+
+ nav .header-nav-item > span:first-child {
+    font-family: 'Lato', sans-serif;
+    font-size:14px;
+}
+
+nav .header-nav-item > span:last-child {
+    font-size: 10px;
+}
+
+nav .header-nav-list > li + li {
+    margin-left: 30px;
+}
+
+.header-nav-list > li + li:last-child {
+    margin-left: 20px;
+}
+
+.header-button {
+    width: 150px;
+}
+
+.link-button.menu {
+    height: 40px;
+    font-size: 12px;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-color: #f79314;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  
+  
+}
+
+header .site-header-inner > *:last-child {
+    display: inline-flex;
+}
+
+.hover-opacity:hover {
+  transition: opacity 0.2s;
+  opacity:0.6;
+}
+
+nav li:hover {
+  transition: opacity 0.2s;
+  opacity:0.6;
+}
+
+
+/* メイン */
+@media screen and (max-width: 767px) {
+main {
+    padding-top: 52px;
+}
+}
+
+
+
+/* コース・料金タイトル */
+.corse-charge-title {
+  padding-top: 70px;
+  padding-bottom: 71px;
+  background-position: center;
+    background-size: 1440px;
+    background-color: #f79314;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-pc.png);
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+.corse-charge-title {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/course-hero-sp.png);
+}
+}
+
+@media screen and (max-width: 767px) {
+.corse-charge-title {
+    padding-top: 42px;
+    padding-bottom: 90px;
+    background-size: contain;
+}
+}
+
+
+.corse-charge-title-heading {
+  padding-left: 145px;
+  color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 767px){
+.corse-charge-title-heading {
+    padding-left: 0px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.3;
+    padding: 0;
+}
+}
+
+/* コースについて */
+.main-section.course-about {
+    background-color: #fcfaf5;
+}
+
+.main-section {
+    padding-top: 75px;
+    padding-bottom: 80px;
+}
+
+@media screen and (max-width: 767px) {
+.main-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+}
+
+
+.section-header {
+    width: 100%;
+}
+
+
+.section-header.contents-tidy {
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-header h2 > span {
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    
+}
+
+@media screen and (max-width: 767px) {
+.section-header h2 > span {
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.section-header h2 .br-sp {
+    display:block;
+}
+}
+
+.br-sp {
+  display:none;
+}
+
+
+
+.section-main-heading {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+.section-main-heading {
+    text-align: center;
+    font-size: 26px !important;
+    line-height: 1.2;
+}
+}
+
+
+.section-header.bottom-line::after {
+    content: '';
+    display: block;
+    border-bottom: solid 6px #f79314;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.main-section .section-header + .section-content {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 767px) {
+.main-section .section-header + .section-content {
+    margin-top: 50px;
+}
+}
+
+.detail-text {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+.detail-text {
+    font-size: 15px;
+    text-align: left;
+}
+}
+
+.pc-br {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+.pc-br {
+    display: inline;
+}
+}
+
+.under-decoration {
+    background: linear-gradient(transparent 70%, #fff79d 70%, #fff79d);
+    
+}
+
+.under-decoration>br {
+    display: none;
+}
+  
+@media screen and (max-width: 767px) {
+.under-decoration>br {
+    display: block;
+}
+}
+
+
+.detail-text--emphasis {
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+.detail-text--emphasis {
+    font-size: 16px;
+    text-align: center;
+}
+}
+
+
+
+.detail-point {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+.detail-point {
+    margin-top: 80px;
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+}
+
+
+.detail-point .list-no {
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+.detail-point .list-no {
+    width: 80px;
+    height: 80px;
+    margin-top: -70px;
+}
+}
+
+
+
+
+.list-no {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -90px auto 0 auto;
+    background-color: #fcfaf5;
+    border-radius: 50%;
+    color: #f79314;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.list-no-image {
+    width: 40px;
+    margin-top: -8px;
+    
+}
+
+@media screen and (max-width: 767px) {
+.list-no-image {
+    width: 32px;
+}
+}
+
+
+img {
+    width: 100%;
+}
+
+.detail-point-title {
+    margin-top: -20px;
+    font-size: 30px;
+    line-height: 36px;
+    
+}
+
+@media screen and (max-width: 767px) {
+.detail-point-title {
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.detail-box {
+    flex-direction: column;
+}
+}
+
+.detail-cassette {
+    width: 31%;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+.detail-cassette {
+    width: 100%;
+    margin-top: 36px;
+}
+}
+
+
+
+.detail-cassette-title {
+    padding: 4px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #222;
+}
+
+@media screen and (max-width: 767px) {
+.detail-cassette-title {
+    font-size: 15px;
+}
+}
+
+.detail-cassette-image {
+    margin-top: 16px;
+}
+
+.detail-cassette-text {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+.detail-cassette-text {
+    font-size: 15px;
+}
+}
+
+
+.detail-cassette-text::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    background: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-finger.png) no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 767px) {
+.detail-cassette-text::before {
+    vertical-align: sub;
+}
+}
+
+
+.detail-course-two-box {
+  margin-top: 60px;
+    padding: 0px 40px 0px;
+    display: flex;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+.detail-course-two-box {
+    overflow-x: auto;
+    padding: initial;
+    display: block;
+}
+}
+
+
+.detail-course-block:first-child {
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 767px) {
+.detail-course-block:first-child {
+    margin-right: initial !important;
+    margin-bottom: 60px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.detail-course-block {
+    min-width: initial !important;
+    width: initial !important;
+}
+}
+
+
+.detail-course-block {
+    width: 48.5%;
+    border-collapse: separate;
+    border: 1px solid #7070701A;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.detail-course-head {
+    background-color: #F79314;
+    font-family: NotoSansCJKjp-Bold, Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 18px;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+}
+
+.detail-course-content:nth-child(even) {
+    background-color: #fffdfa;
+}
+
+.detail-course-content {
+    padding: 18px;
+}
+
+.detail-course-content .detail-course-content-price {
+    font-size: 28px;
+    font-family: Lato-Black;
+    font-weight: bold;
+    margin: 10px 0px 20px;
+}
+
+.detail-course-content-price:before {
+    content: "\FFE5";
+    font-family: NotoSansCJKjp-Bold, Arial, Helvetica, sans-serif;
+}
+
+.detail-course-content-price:after {
+    content: "\7A0E\5225";
+    font-family: NotoSansCJKjp-Bold, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.detail-course-content-body {
+    font-family: Noto Sans CJK JP;
+    font-size: 16px;
+    color: #22222299;
+    line-height: 2em;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.detail-course-content:nth-child(odd) {
+    background-color: #fff8ea;
+}
+
+.detail-course-term {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.detail-course-content.detail-course-term > span {
+  font-size: 30px;
+  color:black;
+}
+
+.detail-course-content  span {
+    color: #F79214;
+    margin-left: 5px;
+}
+
+.detail-course-anchor > a {
+    color: #F79214;
+    font-weight: bold;
+}
+
+.detail-course-anchor > a:before {
+    content: "\203A";
+    transform: matrix(0, 1, -1, 0, 0, 0);
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* コース・料金タイトル */
+
+.plan-box {
+    margin-top: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fcfaf5;
+}
+
+@media screen and (max-width: 767px) {
+.plan-box {
+    margin-top: 40px;
+    padding: 20px;
+}
+}
+
+
+.plan-sub-head {
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+}
+
+.plan-head {
+    max-width: 476px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    color: #f79214;
+    background: -webkit-linear-gradient(-40deg, #f79214, #f74e06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+.plan-head {
+    font-size: 24px;
+    line-height: 27px;
+}
+}
+
+
+.plan-head br {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+.plan-head br {
+    display: block;
+}
+}
+
+
+.plan-cassettes {
+    margin-top: 40px;
+    padding: 16px 20px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes {
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes {
+    position: relative;
+}
+}
+
+
+.plan-cassettes-head {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-head {
+    margin-bottom: 10px;
+    text-align: center;
+}
+}
+
+
+
+
+
+.plan-cassettes-head::before {
+    content: '';
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-point.png);
+    background-size: 100%;
+}
+
+.list-content {
+    justify-content: flex-start;
+    align-items: baseline;
+    padding-left: 8px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 767px) {
+.list-content {
+    padding-left: 0;
+}
+}
+
+
+
+
+.list-content::before {
+    content: '';
+    display: inline-block;
+    min-width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #f79314;
+}
+
+.desc-title {
+    align-items: center;
+    width: 100px;
+    margin-top: 20px;
+    padding: 4px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #f79214;
+    background-color: #fcfaf5;
+}
+
+@media screen and (max-width: 767px) {
+.desc-title {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+}
+
+
+.desc-title.detail::before {
+    width: 17px;
+    height: 17px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-pencil.png);
+}
+
+.desc-title::before {
+    content: '';
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 6px;
+    background-size: 100%;
+}
+
+.desc-text {
+    margin-top: 20px;
+    padding-left: 16px;
+    font-size: 16px !important;
+    line-height: 18px;
+}
+
+@media screen and (max-width: 767px) {
+.desc-text {
+    padding-left: 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+}
+}
+
+p {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+.desc-text p + p {
+    margin-top: 10px;
+}
+}
+
+
+
+.desc-text div > p {
+    line-height: 1.5;
+    
+}
+
+.desc-text + .desc-title {
+    margin-top: 30px;
+}
+
+.desc-title.term::before {
+    width: 16px;
+    height: 18px;
+    margin-left: 2px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-calender.png);
+}
+
+.desc-title.condition::before {
+    width: 17px;
+    height: 14px;
+    margin-left: 2px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-condition.png);
+}
+
+.desc-title.fee::before {
+    width: 20px;
+    height: 20px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/icon-coin.png);
+}
+
+.plan-cassettes-tools {
+    display: flex;
+    margin-top: 28px;
+    display: flow-root;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-tools {
+    display: block;
+    margin-top: 17px;
+}
+}
+
+
+.plan-cassettes-tool:nth-child(odd) {
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-tool:nth-child(odd) {
+    margin-right: initial !important;
+}
+}
+
+.plan-cassettes-tool-box {
+    padding: 13px 8px 18px;
+}
+
+.plan-cassettes-tool-label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.plan-cassettes-tool-body {
+    font-size: 16px;
+}
+
+.plan-cassettes-tool {
+    width: 49%;
+    float: left;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-tool {
+    float: initial !important;
+    width: initial !important;
+}
+}
+
+.plan-cassettes-skipping {
+    display: flow-root;
+    padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping {
+    display: block;
+    padding: 18px;
+}
+}
+
+.plan-cassettes {
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.plan-cassettes-skipping-left {
+    float: left;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping-left {
+    float: initial;
+    width: 65%;
+    height: initial;
+    max-width: 130px;
+    margin: 0px auto 20px;
+}
+}
+
+
+
+
+.plan-cassettes-skipping-right {
+    float: left;
+    display: contents;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping-right {
+    float: initial;
+    text-align: center;
+}
+}
+
+
+.plan-cassettes-skipping-right>h4 {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping-right>h4 {
+    margin-bottom: 14px;
+}
+}
+
+.plan-cassettes-skipping-right>p {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping-right>p {
+    text-align: left;
+}
+}
+
+.plan-cassettes-skipping-right>h4>br {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+.plan-cassettes-skipping-right>h4>br {
+    display: block;
+}
+}
+
+
+
+.plan-cassettes-skipping-right>p>span {
+    color: #F79214;
+}
+
+/* 受講生の声 */
+
+.main-section.voice {
+    padding-top: 40px;
+    background-color: #f6f6f6;
+    overflow: hidden;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+@media screen and (max-width: 767px) {
+.main-section.voice {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+}
+
+@media screen and (max-width: 767px) {
+.main-section.voice::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 40px;
+    left: 60%;
+    width: 130px;
+    height: 130px;
+}
+}
+
+
+
+
+.voice .container {
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/bg-section-top-course.png);
+    background-size: 281px 275px;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) top;
+    padding-top: 35px;
+}
+
+@media screen and (max-width: 767px) {
+.voice .container {
+    background: none;
+    padding-top: 0;
+}
+}
+
+@media screen and (max-width: 767px) {
+.section-content.contents {
+    position: relative;
+}
+}
+
+@media screen and (max-width: 767px) {
+.pick-up-contents-background {
+    
+    top: 0;
+    left: 20px;
+    position: absolute;
+    
+}
+}
+
+.pick-up-contents-list > .pick-up-contents-cassette {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3);
+}
+
+@media screen and (max-width: 767px) {
+.pick-up-contents-list > .pick-up-contents-cassette {
+ flex-direction: column;
+ width:100%;
+    
+}
+}
+
+@media screen and (max-width: 767px) {
+.pick-up-contents-list {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+}
+
+
+.pick-up-contents-media .pick-up-contents-media-thumbnail {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-top: calc((190/320) * 100%);
+}
+
+.pick-up-contents-media .pick-up-contents-media-thumbnail > img {
+    width: 100%;
+    height: 145%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) {
+.pick-up-contents-media .pick-up-contents-media-thumbnail > img {
+ margin-top:20px;
+
+}
+}
+a:hover .hover-scale, .hover-scale:hover  {
+    transform: scale(1.05, 1.05);
+}
+
+a:hover .hover-text-color, .hover-text-color:hover {
+    color:orange;
+}
+
+
+.hover-text-color {
+    transition: 0.2s;
+}
+
+.pick-up-contents-media .pick-up-contents-media-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+
+/* フッター */
+
+footer {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background-color: #f79314;
+}
+
+@media screen and (max-width: 767px) {
+.site-footer-main {
+    display: block;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 767px) {
+ footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+}
+
+.page-top-button.contents-tidy {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-top-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -105px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 12px 30px -15px;
+    transition: 0.2s;
+}
+
+
+@media screen and (max-width: 767px) {
+.page-top-button {
+    right: 20px;
+    top: -85px;
+}
+}
+
+.page-top-arrow {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-left: solid 3px #f79214;
+    border-top: solid 3px #f79214;
+    transform: rotate(45deg);
+    text-decoration: none;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.site-footer-main .footer-nav {
+    order: 2;
+}
+
+@media screen and (max-width: 767px) {
+.site-footer-main .footer-nav {
+    text-align: left;
+    margin-left: 20px;
+}
+}
+
+.footer-nav-item > span {
+    font-weight: normal;
+    margin-left: 1em;
+}
+
+.footer-nav > li + li {
+    margin-top: 30px;
+}
+
+.footer-nav-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.footer-character > img {
+    width: auto;
+    height: 70px;
+}
+
+@media screen and (max-width: 767px) {
+.footer-nav + .footer-character {
+    margin-top: 50px;
+}
+}
+
+.site-footer-main .footer-character {
+    order: 3;
+    align-self: flex-end;
+}
+
+.site-footer-main .footer-info {
+    order: 1;
+}
+
+@media screen and (max-width: 767px) {
+.footer-character + .footer-info {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #fff;
+}
+}
+
+.footer-info {
+    display: block;
+    color: #fff;
+}
+
+.footer-info .footer-logo {
+    display: inline-block;
+    max-width: 280px;
+}
+
+.footer-info .footer-logo + .footer-company {
+    margin-top: 25px;
+}
+
+
+@media screen and (max-width: 767px) {
+.footer-info .footer-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+.footer-info .footer-company, .footer-info .footer-address {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-info .footer-company + .footer-address {
+    margin-top: 10px;
+}
+
+.footer-info .footer-address + .footer-social {
+    margin-top: 35px;
+}
+
+.footer-info .footer-social {
+    display: flex;
+}
+
+@media screen and (max-width: 767px) {
+.footer-info .footer-social {
+    justify-content: center;
+}
+}
+
+
+
+.footer-info .footer-social-item {
+    display: block;
+    max-width: 60px;
+}
+
+.footer-info .footer-social-item > img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-info .footer-social > li + li {
+    margin-left: 20px;
+}
+
+
+footer .site-footer-main + .site-footer-sub {
+    margin-top: 60px;
+}
+
+
+.footer-copyright {
+    color: #fff;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+.site-footer-sub {
+    text-align: center;
+}
+}
+
+
+
